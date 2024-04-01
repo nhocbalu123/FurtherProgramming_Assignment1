@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="add methods to ClaimProcessManagerImp and Claim">
+    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="add all methods to ClaimProcessManagerImp">
+      <change afterPath="$PROJECT_DIR$/src/Assignment1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManagerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManagerImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/Claim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Claim.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711802554792</updated>
       <workItem from="1711802555951" duration="1829000" />
-      <workItem from="1711970348730" duration="5825000" />
+      <workItem from="1711970348730" duration="9852000" />
     </task>
     <task id="LOCAL-00001" summary="create Customer class">
       <option name="closed" value="true" />
@@ -128,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711973771267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add all methods to ClaimProcessManagerImp">
+      <option name="closed" value="true" />
+      <created>1711976292357</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711976292358</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +149,7 @@
     <MESSAGE value="create all classes and interface" />
     <MESSAGE value="create implementation of ClaimProcessManager" />
     <MESSAGE value="add methods to ClaimProcessManagerImp and Claim" />
-    <option name="LAST_COMMIT_MESSAGE" value="add methods to ClaimProcessManagerImp and Claim" />
+    <MESSAGE value="add all methods to ClaimProcessManagerImp" />
+    <option name="LAST_COMMIT_MESSAGE" value="add all methods to ClaimProcessManagerImp" />
   </component>
 </project>

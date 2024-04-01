@@ -15,7 +15,19 @@ public class Claim {
     private double claimAmount;
     private String status;
     private String receiverBankingInfo;
+
+    //Constructor
+    public Claim(String s) {
+        this.id = s;
+    }
+
+    //Getter
     public String getId() {
         return this.id;
+    }
+
+    //toString
+    public String toString() {
+        return id;
     }
 }

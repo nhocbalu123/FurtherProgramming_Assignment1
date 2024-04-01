@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="create Customer class">
-      <change afterPath="$PROJECT_DIR$/src/Assignment1/Claim.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment1/InsuranceCard.java" afterDir="false" />
+    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="create all classes and interface">
+      <change afterPath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManagerImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/Claim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Claim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/InsuranceCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/InsuranceCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/PolicyHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/PolicyHolder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "nhocbalu123"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7631fec2-26f6-4992-b52f-404e4398729c" />
+        <option name="url" value="https://github.com/nhocbalu123/FurtherProgramming_Assignment1.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -76,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711802554792</updated>
       <workItem from="1711802555951" duration="1829000" />
-      <workItem from="1711970348730" duration="1103000" />
+      <workItem from="1711970348730" duration="1847000" />
     </task>
     <task id="LOCAL-00001" summary="create Customer class">
       <option name="closed" value="true" />
@@ -86,7 +101,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711970496984</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create all classes and interface">
+      <option name="closed" value="true" />
+      <created>1711971648268</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711971648269</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create all classes and interface">
+      <option name="closed" value="true" />
+      <created>1711971720111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711971720111</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Customer class" />
     <MESSAGE value="create Customer class" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Customer class" />
+    <MESSAGE value="create all classes and interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="create all classes and interface" />
   </component>
 </project>

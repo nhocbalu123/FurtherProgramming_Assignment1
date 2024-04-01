@@ -1,5 +1,7 @@
 package Assignment1;
-
+/**
+ * @author <Nguyen Quy Minh Thang - s3978302>
+ */
 import java.util.Date;
 import java.util.List;
 

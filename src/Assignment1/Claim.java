@@ -15,4 +15,7 @@ public class Claim {
     private double claimAmount;
     private String status;
     private String receiverBankingInfo;
+    public String getId() {
+        return this.id;
+    }
 }

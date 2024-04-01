@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="create all classes and interface">
-      <change afterPath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManagerImp.java" afterDir="false" />
+    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="create implementation of ClaimProcessManager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/Claim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Claim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment1/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment1/InsuranceCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/InsuranceCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment1/PolicyHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/PolicyHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManagerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManagerImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711802554792</updated>
       <workItem from="1711802555951" duration="1829000" />
-      <workItem from="1711970348730" duration="1847000" />
+      <workItem from="1711970348730" duration="3319000" />
     </task>
     <task id="LOCAL-00001" summary="create Customer class">
       <option name="closed" value="true" />
@@ -117,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711971720111</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create implementation of ClaimProcessManager">
+      <option name="closed" value="true" />
+      <created>1711972447149</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711972447150</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +131,7 @@
     <MESSAGE value="add Customer class" />
     <MESSAGE value="create Customer class" />
     <MESSAGE value="create all classes and interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="create all classes and interface" />
+    <MESSAGE value="create implementation of ClaimProcessManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="create implementation of ClaimProcessManager" />
   </component>
 </project>

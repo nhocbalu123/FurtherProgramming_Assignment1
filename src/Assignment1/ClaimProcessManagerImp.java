@@ -7,6 +7,7 @@ import java.util.List;
 
 public class ClaimProcessManagerImp implements ClaimProcessManager {
     private List<Claim> claims;
+    //Constructor
     public ClaimProcessManagerImp() {
         this.claims = new ArrayList<>();
     }

@@ -9,4 +9,10 @@ public abstract class Customer {
     private String fullName;
     private InsuranceCard card;
     private List<Claim> claims;
+
+    //Getter
+    public String getId() {
+        return this.id;
+    }
+    public abstract String toString();
 }

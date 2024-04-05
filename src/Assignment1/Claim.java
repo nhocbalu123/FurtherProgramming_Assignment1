@@ -13,12 +13,28 @@ public class Claim {
     private Date examDate;
     private List<String> documents;
     private double claimAmount;
-    private String status;
-    private String receiverBankingInfo;
+    enum ClaimStatus {
+        NEW,
+        PROCESSING,
+        DONE
+    }
+    private Bank bankInfo;
+
 
     //Constructor
-    public Claim(String s) {
-        this.id = s;
+    public Claim(String id) {
+        this.id = id;
+    }
+    public Claim(String id, Date claimDate, Customer insuredPerson, String cardNumber,
+                 Date examDate, double claimAmount, ClaimStatus claimStatus, Bank bankInfo) {
+        this.id = id;
+        this.claimDate = claimDate;
+        this.insuredPerson = insuredPerson;
+        this.cardNumber = cardNumber;
+        this.examDate = examDate;
+        this.claimAmount = claimAmount;
+        //this.ClaimStatus = claimStatus;
+        this.bankInfo = bankInfo;
     }
 
     //Getter
@@ -26,8 +42,8 @@ public class Claim {
         return this.id;
     }
 
-    //toString
+    @Override
     public String toString() {
-        return id;
+        return String.format("Id: %s", id);
     }
 }

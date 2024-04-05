@@ -4,13 +4,14 @@ package Assignment1;
  */
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    //Create an instance of ClaimProcessManagerImpl
-    private static ClaimProcessManagerImp manager = new ClaimProcessManagerImp();
-    private static CustomerProcessManagerImp customerManager = new CustomerProcessManagerImp();
+    private static List<Customer> customers = new ArrayList<Customer>();
+
+    //Load file
     private static void loadCustomers() {
         try (Scanner scanner = new Scanner(new File("src\\customers.csv"))) {
             while (scanner.hasNextLine()) {
@@ -19,12 +20,14 @@ public class Main {
                 String type = parts[0];
                 String id = parts[1];
                 String name = parts[2];
-                if (type.equals("PolicyHolder")) {
-                    PolicyHolder policyHolder = new PolicyHolder(id, name);
-                    customerManager.addCustomer(policyHolder);
+                String cardNumber = parts[3];
+                InsuranceCard card = new InsuranceCard(cardNumber);
+                if (type.equals("Policy Holder")) {
+                    PolicyHolder policyHolder = new PolicyHolder(id, name, card);
+                    customers.add(policyHolder);
                 } else if (type.equals("Dependent")) {
-                    Dependent dependent = new Dependent(id, name);
-                    customerManager.addCustomer(dependent);
+                    Dependent dependent = new Dependent(id, name, card);
+                    customers.add(dependent);
                 }
             }
         } catch (FileNotFoundException e) {
@@ -33,30 +36,18 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        /*
-        //Create an instance of Claim
+        loadCustomers();
+
         Claim newClaim = new Claim("f-1234567890");
-        manager.add(newClaim);
         Claim newClaim2 = new Claim("f-111111111");
-        manager.add(newClaim2);
         System.out.println(newClaim.getId());
 
-        //Get all claims
-        List<Claim> allClaims = manager.getAll();
-
-        //Print all claims
-        for (Claim claim : allClaims) {
-            System.out.println(claim);
-        }
-        */
-
-
-        //Get all customers
-        loadCustomers();
-        List<Customer> customers = customerManager.getAllCustomers();
-        //Print all customers
         for (Customer customer : customers) {
             System.out.println(customer);
         }
     }
 }
+
+
+
+

@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="create Main and add constructors and getters for Claim">
-      <change afterPath="$PROJECT_DIR$/src/Assignment1/CustomerProcessManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment1/CustomerProcessManagerImp.java" afterDir="false" />
+    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="create CustomerProcessManager;CustomerProcessManagerImp; add getter for Customer; add constructor and toString for Dependent and PolicyHolder; input file in Main; add customers.csv file">
+      <change afterPath="$PROJECT_DIR$/src/Assignment1/Bank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManagerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManagerImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/Claim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Claim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManagerImp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/CustomerProcessManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/CustomerProcessManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/Dependent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Dependent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/InsuranceCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/InsuranceCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/PolicyHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/PolicyHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/customers.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,22 +56,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ASUS/Documents/Further Programming (OOP)/W1/Exercise/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/Documents/Further Programming (OOP)/Ass 1/Thang-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Assignment1" />
@@ -95,7 +98,10 @@
       <workItem from="1711802555951" duration="1829000" />
       <workItem from="1711970348730" duration="10549000" />
       <workItem from="1712069316729" duration="4944000" />
-      <workItem from="1712112270730" duration="2582000" />
+      <workItem from="1712112270730" duration="9311000" />
+      <workItem from="1712244146201" duration="876000" />
+      <workItem from="1712246324123" duration="1200000" />
+      <workItem from="1712296547291" duration="10040000" />
     </task>
     <task id="LOCAL-00001" summary="create Customer class">
       <option name="closed" value="true" />
@@ -153,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711981156540</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="create CustomerProcessManager;CustomerProcessManagerImp; add getter for Customer; add constructor and toString for Dependent and PolicyHolder; input file in Main; add customers.csv file">
+      <option name="closed" value="true" />
+      <created>1712122419050</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712122419050</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +181,7 @@
     <MESSAGE value="add methods to ClaimProcessManagerImp and Claim" />
     <MESSAGE value="add all methods to ClaimProcessManagerImp" />
     <MESSAGE value="create Main and add constructors and getters for Claim" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Main and add constructors and getters for Claim" />
+    <MESSAGE value="create CustomerProcessManager;CustomerProcessManagerImp; add getter for Customer; add constructor and toString for Dependent and PolicyHolder; input file in Main; add customers.csv file" />
+    <option name="LAST_COMMIT_MESSAGE" value="create CustomerProcessManager;CustomerProcessManagerImp; add getter for Customer; add constructor and toString for Dependent and PolicyHolder; input file in Main; add customers.csv file" />
   </component>
 </project>

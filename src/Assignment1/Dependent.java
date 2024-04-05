@@ -8,15 +8,19 @@ public class Dependent extends Customer{
     private InsuranceCard card;
 
     // Constructor
-    public Dependent(String id1, String fullName1) {
+    public Dependent(String id1, String fullName1, InsuranceCard card1) {
         this.id = id1;
         this.fullName = fullName1;
+        this.card = card1;
     }
 
     @Override
     public String toString() {
-        // String.format() is similar to printf, but it return instead of display
-        return String.format("Id: %s, Name: %s",
-                id, fullName);
+        return "Policy Holder{" +
+                "ID ='" + id + '\'' +
+                ", Full name ='" + fullName + '\'' +
+                ", Insurance card =" + card +
+                ", Number of claims =" + claims.size() +
+                '}';
     }
 }

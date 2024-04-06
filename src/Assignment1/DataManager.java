@@ -1,4 +1,7 @@
 package Assignment1;
+/**
+ * @author <Nguyen Quy Minh Thang - s3978302>
+ */
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -9,10 +12,12 @@ import java.util.*;
 public class DataManager {
     private List<Customer> customers;
 
+    //Constructor
     public DataManager() {
         this.customers = new ArrayList<>();
     }
 
+    //Getter
     public List<Customer> getCustomers() {
         return this.customers;
     }
@@ -121,7 +126,7 @@ public class DataManager {
         }
     }
 
-    private Customer getCustomerById(String id) {
+    public Customer getCustomerById(String id) {
         for (Customer customer : customers) {
             if (customer.getId().equals(id)) {
                 return customer;

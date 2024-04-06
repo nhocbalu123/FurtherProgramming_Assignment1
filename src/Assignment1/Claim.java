@@ -2,6 +2,7 @@ package Assignment1;
 /**
  * @author <Nguyen Quy Minh Thang - s3978302>
  */
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -20,7 +21,6 @@ public class Claim {
         DONE
     }
     private Bank bankInfo;
-
 
     //Constructor
     public Claim(String id, Date claimDate, Customer insuredPerson, String cardNumber, Date examDate,
@@ -41,6 +41,10 @@ public class Claim {
     public String getId() {
         return this.id;
     }
+    public Date getClaimDate() {
+        return this.claimDate;
+    }
+
 
     //Setter
     public void setId(String id) {
@@ -49,15 +53,37 @@ public class Claim {
     public void setInsuredPerson(Customer customer) {
         this.insuredPerson = customer;
     }
+    public void setClaimDate(Date claimDate) {
+        this.claimDate = claimDate;
+    }
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+    public void setExamDate(Date examDate) {
+        this.examDate = examDate;
+    }
+    public void setDocuments(List<String> documents) {
+        this.documents = documents;
+    }
+    public void setClaimAmount(double claimAmount) {
+        this.claimAmount = claimAmount;
+    }
+    public void setClaimStatus(ClaimStatus claimStatus) {
+        this.claimStatus = claimStatus;
+    }
+    public void setBankInfo(Bank bankInfo) {
+        this.bankInfo = bankInfo;
+    }
 
     @Override
     public String toString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         return "Claim{" +
-                "ID = " + id +
-                ", Claim Date = " + claimDate +
+                "ID = '" + id + '\'' +
+                ", Claim Date = " + sdf.format(claimDate) +
                 ", Insured Person = '" + insuredPerson.getFullName() + '\'' +
                 ", Card Number = " + cardNumber +
-                ", Exam Date = " + examDate +
+                ", Exam Date = " + sdf.format(examDate) +
                 ", Claim Amount = " + claimAmount +
                 ", Claim Status = " + claimStatus +
                 ", Bank Info = " + bankInfo.getBankName() +

@@ -17,11 +17,37 @@ public class UI {
         this.scanner = new Scanner(System.in);
     }
 
+    public void displayCustomers() {
+        List<Customer> customers = dataManager.getCustomers();
+
+        if (customers.isEmpty()) {
+            System.out.println("No customers found.\n");
+            return;
+        }
+
+        //Sort list of customers by ID
+        customers.sort(new Comparator<>() {
+            @Override
+            public int compare(Customer c1, Customer c2) {
+                return c1.getId().compareTo(c2.getId()); //Ascending order
+            }
+        });
+
+        //Print all customers
+        System.out.println("List of customers, sorted by ID in ascending order:\n");
+        for (Customer customer : customers) {
+            System.out.println(customer);
+        }
+        System.out.println();
+    }
+
+
+
     public void displayClaims() {
         System.out.println("Please enter the ID of the customer:");
         String customerId = scanner.nextLine();
 
-        // Get list of claims of a customer
+        //Get list of claims of a customer
         List<Claim> claims = null;
         for (Customer customer : dataManager.getCustomers()) {
             if (customer.getId().equals(customerId)) {
@@ -35,19 +61,19 @@ public class UI {
             return;
         }
 
-        // Sort list of claims by date
+        //Sort list of claims by date
         claims.sort((c1, c2) -> {
             return c2.getClaimDate().compareTo(c1.getClaimDate()); // Descending order
         });
 
-        // Print all claims of a customer
+        //Print all claims of a customer
         System.out.println("List of claims, sorted by claim date in descending order:\n");
         for (Claim claim : claims) {
             System.out.println(claim);
         }
         System.out.println();
 
-        // Ask the user if they want to save the list to a file
+        //Ask the user if they want to save the list to a file
         System.out.println("Do you want to save this list to a file? (yes/no)");
         String answer = scanner.nextLine();
 
@@ -92,7 +118,7 @@ public class UI {
 
         System.out.println("Please enter the claim amount:");
         double claimAmount = scanner.nextDouble();
-        scanner.nextLine(); // consume newline left-over
+        scanner.nextLine();
 
         //Enter claim status
         Claim.ClaimStatus claimStatus = null;
@@ -178,7 +204,7 @@ public class UI {
 
         System.out.println("Please enter the new claim amount:");
         double claimAmount = scanner.nextDouble();
-        scanner.nextLine(); // consume newline left-over
+        scanner.nextLine();
 
         //Enter claim status
         Claim.ClaimStatus claimStatus = null;
@@ -255,32 +281,37 @@ public class UI {
         System.out.println("\nWELCOME TO INSURANCE CLAIMS MANAGEMENT SYSTEM! - by BALU\n");
         while (true) {
             System.out.println("Please select an option:");
-            System.out.println("1. Display all claims of a customer");
-            System.out.println("2. Add a claim to a customer");
-            System.out.println("3. Update a claim of a customer");
-            System.out.println("4. Delete a claim of a customer");
-            System.out.println("5. Exit");
+            System.out.println("1. Display all customers");
+            System.out.println("2. Display all claims of a customer");
+            System.out.println("3. Add a claim to a customer");
+            System.out.println("4. Update a claim of a customer");
+            System.out.println("5. Delete a claim of a customer");
+            System.out.println("6. Exit");
 
             String option = scanner.nextLine();
 
             switch (option) {
                 case "1":
-                    // Display all claims
-                    displayClaims();
+                    //Display all customers
+                    displayCustomers();
                 break;
                 case "2":
-                    // Add a claim
+                    //Display all claims
+                    displayClaims();
+                break;
+                case "3":
+                    //Add a claim
                     addClaim();
                     break;
-                case "3":
-                    // Update a claim
+                case "4":
+                    //Update a claim
                     updateClaim();
                     break;
-                case "4":
-                    // Delete a claim
+                case "5":
+                    //Delete a claim
                     deleteClaim();
                     break;
-                case "5":
+                case "6":
                     System.out.println("Exiting...");
                     return;
                 default:

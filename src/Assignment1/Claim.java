@@ -13,6 +13,7 @@ public class Claim {
     private Date examDate;
     private List<String> documents;
     private double claimAmount;
+    private ClaimStatus claimStatus;
     enum ClaimStatus {
         NEW,
         PROCESSING,
@@ -22,28 +23,46 @@ public class Claim {
 
 
     //Constructor
-    public Claim(String id) {
-        this.id = id;
-    }
-    public Claim(String id, Date claimDate, Customer insuredPerson, String cardNumber,
-                 Date examDate, double claimAmount, ClaimStatus claimStatus, Bank bankInfo) {
+    public Claim(String id, Date claimDate, Customer insuredPerson, String cardNumber, Date examDate,
+                 List<String> documents, double claimAmount, ClaimStatus claimStatus, Bank bankInfo) {
         this.id = id;
         this.claimDate = claimDate;
         this.insuredPerson = insuredPerson;
         this.cardNumber = cardNumber;
         this.examDate = examDate;
         this.claimAmount = claimAmount;
-        //this.ClaimStatus = claimStatus;
         this.bankInfo = bankInfo;
+        this.claimStatus = claimStatus;
+        this.documents = documents;
     }
+    public Claim() {}
 
     //Getter
     public String getId() {
         return this.id;
     }
 
+    //Setter
+    public void setId(String id) {
+        this.id = id;
+    }
+    public void setInsuredPerson(Customer customer) {
+        this.insuredPerson = customer;
+    }
+
     @Override
     public String toString() {
-        return String.format("Id: %s", id);
+        return "Claim{" +
+                "ID = " + id +
+                ", Claim Date = " + claimDate +
+                ", Insured Person = '" + insuredPerson.getFullName() + '\'' +
+                ", Card Number = " + cardNumber +
+                ", Exam Date = " + examDate +
+                ", Claim Amount = " + claimAmount +
+                ", Claim Status = " + claimStatus +
+                ", Bank Info = " + bankInfo.getBankName() +
+                ", Number of Documents = " + documents.size() +
+                '}';
     }
+
 }

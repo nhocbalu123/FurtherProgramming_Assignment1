@@ -14,19 +14,29 @@ public class PolicyHolder extends Customer{
         super();
         this.dependents = new ArrayList<>();
     }
-    public PolicyHolder(String id, String fullName, InsuranceCard insuranceCard){
+    public PolicyHolder(String id, String fullName, InsuranceCard insuranceCard) {
         super(id, fullName, insuranceCard);
         this.dependents = new ArrayList<>();
     }
 
+    public PolicyHolder(String id, String fullName) {
+        super(id, fullName);
+        this.dependents = new ArrayList<>();
+    }
+
+    public List<Dependent> getDependents() {
+        return this.dependents;
+    }
     @Override
     public String toString() {
         return "Policy Holder{" +
-                "ID ='" + id + '\'' +
-                ", Full name ='" + fullName + '\'' +
-                ", Insurance card =" + card +
-                ", Number of dependents=" + dependents.size() +
-                ", Number of claims =" + claims.size() +
+                "ID = '" + id + '\'' +
+                ", Full name = '" + fullName + '\'' +
+                ", Insurance card = " + card.getCardNumber() +
+                ", Number of dependents = " + dependents.size() +
+                ", Number of claims = " + claims.size() +
                 '}';
     }
+
+
 }

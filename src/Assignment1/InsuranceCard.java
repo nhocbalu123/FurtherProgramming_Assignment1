@@ -11,7 +11,15 @@ public class InsuranceCard {
     private Date expirationDate;
 
     //Constructor
-    public InsuranceCard(String cardNum) {
+    public InsuranceCard(String cardNum, Customer cardHolder, String policyOwner, Date expirationDate) {
         this.cardNumber = cardNum;
+        this.cardHolder = cardHolder;
+        this.policyOwner = policyOwner;
+        this.expirationDate = expirationDate;
+    }
+
+    //Getter
+    public String getCardNumber() {
+        return this.cardNumber;
     }
 }

@@ -16,21 +16,33 @@ public abstract class Customer implements ClaimProcessManager{
         this.id = id;
         this.fullName = fullName;
         this.card = insuranceCard;
-        this.claims = new ArrayList<Claim>();
+        this.claims = new ArrayList<>();
     }
     public Customer() {
         this.id = "";
         this.fullName = "";
         this.card = null;
-        this.claims = new ArrayList<Claim>();
+        this.claims = new ArrayList<>();
+    }
+    public Customer(String id, String fullName) {
+        this.id = id;
+        this.fullName = fullName;
+        this.card = null;
+        this.claims = new ArrayList<>();
     }
 
     //Getter
     public String getId() {
         return this.id;
     }
-    @Override
-    public abstract String toString();
+    public String getFullName() {
+        return this.fullName;
+    }
+
+    //Setter
+    public void setCard(InsuranceCard card) {
+        this.card = card;
+    }
 
 
     //PROCESS CLAIM
@@ -69,4 +81,6 @@ public abstract class Customer implements ClaimProcessManager{
         return claims;
     }
 
+    @Override
+    public abstract String toString();
 }

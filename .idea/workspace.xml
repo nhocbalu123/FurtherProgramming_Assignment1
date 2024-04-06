@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="create CustomerProcessManager;CustomerProcessManagerImp; add getter for Customer; add constructor and toString for Dependent and PolicyHolder; input file in Main; add customers.csv file">
-      <change afterPath="$PROJECT_DIR$/src/Assignment1/Bank.java" afterDir="false" />
+    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="create Bank; edit fields in Claim; delete ClaimProcessManagerImp and move the methods into Customer; add constructors for a few classes">
+      <change afterPath="$PROJECT_DIR$/src/Assignment1/DataManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Bank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/Claim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Claim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment1/ClaimProcessManagerImp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment1/CustomerProcessManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/CustomerProcessManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/Dependent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Dependent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/InsuranceCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/InsuranceCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/Main.java" afterDir="false" />
@@ -101,7 +100,8 @@
       <workItem from="1712112270730" duration="9311000" />
       <workItem from="1712244146201" duration="876000" />
       <workItem from="1712246324123" duration="1200000" />
-      <workItem from="1712296547291" duration="10040000" />
+      <workItem from="1712296547291" duration="22003000" />
+      <workItem from="1712407671723" duration="4913000" />
     </task>
     <task id="LOCAL-00001" summary="create Customer class">
       <option name="closed" value="true" />
@@ -167,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712122419050</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="create Bank; edit fields in Claim; delete ClaimProcessManagerImp and move the methods into Customer; add constructors for a few classes">
+      <option name="closed" value="true" />
+      <created>1712313996548</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712313996550</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +190,7 @@
     <MESSAGE value="add all methods to ClaimProcessManagerImp" />
     <MESSAGE value="create Main and add constructors and getters for Claim" />
     <MESSAGE value="create CustomerProcessManager;CustomerProcessManagerImp; add getter for Customer; add constructor and toString for Dependent and PolicyHolder; input file in Main; add customers.csv file" />
-    <option name="LAST_COMMIT_MESSAGE" value="create CustomerProcessManager;CustomerProcessManagerImp; add getter for Customer; add constructor and toString for Dependent and PolicyHolder; input file in Main; add customers.csv file" />
+    <MESSAGE value="create Bank; edit fields in Claim; delete ClaimProcessManagerImp and move the methods into Customer; add constructors for a few classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="create Bank; edit fields in Claim; delete ClaimProcessManagerImp and move the methods into Customer; add constructors for a few classes" />
   </component>
 </project>

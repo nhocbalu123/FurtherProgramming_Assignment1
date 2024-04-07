@@ -145,8 +145,18 @@ public class UI {
             }
         }
 
-        System.out.println("Please enter the claim amount:");
-        double claimAmount = scanner.nextDouble();
+        double claimAmount = 0;
+        boolean validClaimAmount = false;
+        while (!validClaimAmount) {
+            System.out.println("Please enter the claim amount:");
+            try {
+                claimAmount = scanner.nextDouble();
+                validClaimAmount = true;
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid claim amount. Please enter a valid number.\n");
+                scanner.next(); //discard the invalid input
+            }
+        }
         scanner.nextLine();
 
         Claim.ClaimStatus claimStatus = null;
@@ -171,8 +181,18 @@ public class UI {
 
         Bank bankInfo = new Bank(bankAccountNumber, receiverName, bankName);
 
-        System.out.println("Please enter the number of documents:");
-        int numDocuments = scanner.nextInt();
+        int numDocuments = 0;
+        boolean validNumDocuments = false;
+        while (!validNumDocuments) {
+            System.out.println("Please enter the number of documents:");
+            try {
+                numDocuments = scanner.nextInt();
+                validNumDocuments = true;
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid number. Please enter a valid number.\n");
+                scanner.next(); //discard the invalid input
+            }
+        }
         scanner.nextLine();
 
         List<String> documents = new ArrayList<>();
@@ -182,7 +202,7 @@ public class UI {
             documents.add(document);
         }
 
-
+        //Set the fields in claim
         Claim claim = new Claim();
         claim.setId(claimId);
         claim.setClaimDate(claimDate);
@@ -251,8 +271,18 @@ public class UI {
             }
         }
 
-        System.out.println("Please enter the new claim amount:");
-        double claimAmount = scanner.nextDouble();
+        double claimAmount = 0;
+        boolean validClaimAmount = false;
+        while (!validClaimAmount) {
+            System.out.println("Please enter the new claim amount:");
+            try {
+                claimAmount = scanner.nextDouble();
+                validClaimAmount = true;
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid claim amount. Please enter a valid number.\n");
+                scanner.next(); //discard the invalid input
+            }
+        }
         scanner.nextLine();
 
         Claim.ClaimStatus claimStatus = null;
@@ -277,8 +307,18 @@ public class UI {
 
         Bank bankInfo = new Bank(bankAccountNumber, receiverName, bankName);
 
-        System.out.println("Please enter the new number of documents:");
-        int numDocuments = scanner.nextInt();
+        int numDocuments = 0;
+        boolean validNumDocuments = false;
+        while (!validNumDocuments) {
+            System.out.println("Please enter the new number of documents:");
+            try {
+                numDocuments = scanner.nextInt();
+                validNumDocuments = true;
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid number. Please enter a valid number.\n");
+                scanner.next(); //discard the invalid input
+            }
+        }
         scanner.nextLine();
 
         List<String> documents = new ArrayList<>();
@@ -288,6 +328,8 @@ public class UI {
             documents.add(document);
         }
 
+
+        //Set the fields in claim
         claim.setClaimDate(claimDate);
         claim.setCardNumber(cardNumber);
         claim.setExamDate(examDate);

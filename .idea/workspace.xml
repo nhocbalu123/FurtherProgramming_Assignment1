@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="add displayCustomer method to UI">
+    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="add error handling to updateClaim and addClaim method in UI">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Assignment1/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +60,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -92,7 +94,7 @@
       <workItem from="1712244146201" duration="876000" />
       <workItem from="1712246324123" duration="1200000" />
       <workItem from="1712296547291" duration="22003000" />
-      <workItem from="1712407671723" duration="19436000" />
+      <workItem from="1712407671723" duration="23919000" />
     </task>
     <task id="LOCAL-00001" summary="create Customer class">
       <option name="closed" value="true" />
@@ -190,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712432582213</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add error handling to updateClaim and addClaim method in UI">
+      <option name="closed" value="true" />
+      <created>1712458731031</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712458731031</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +219,11 @@
     <MESSAGE value="create constructor, setter and getter for a few classes, create DataManager class; override toString for a few classes" />
     <MESSAGE value="create setter and getter for Claim; delete CustomerProcessManager and CustomerProcessManagerImp; add UI" />
     <MESSAGE value="add displayCustomer method to UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="add displayCustomer method to UI" />
+    <MESSAGE value="add error handling to updateClaim and addClaim method in UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="add error handling to updateClaim and addClaim method in UI" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

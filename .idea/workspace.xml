@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="add error handling to updateClaim and addClaim method in UI">
+    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="add more error handling to updateClaim and addClaim method in UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment1/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment1/PolicyHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/PolicyHolder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="4" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/.." />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,7 +59,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ASUS/Documents/Further Programming (OOP)/FurtherProgramming_Assignment1-master",
+    "last_opened_file_path": "C:/Users/ASUS/Documents/Further Programming (OOP)/Ass 1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,6 +100,8 @@
       <workItem from="1712246324123" duration="1200000" />
       <workItem from="1712296547291" duration="22003000" />
       <workItem from="1712407671723" duration="23919000" />
+      <workItem from="1712478147553" duration="372000" />
+      <workItem from="1712478629855" duration="3584000" />
     </task>
     <task id="LOCAL-00001" summary="create Customer class">
       <option name="closed" value="true" />
@@ -200,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712458731031</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add more error handling to updateClaim and addClaim method in UI">
+      <option name="closed" value="true" />
+      <created>1712478269847</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712478269847</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +235,8 @@
     <MESSAGE value="create setter and getter for Claim; delete CustomerProcessManager and CustomerProcessManagerImp; add UI" />
     <MESSAGE value="add displayCustomer method to UI" />
     <MESSAGE value="add error handling to updateClaim and addClaim method in UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="add error handling to updateClaim and addClaim method in UI" />
+    <MESSAGE value="add more error handling to updateClaim and addClaim method in UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more error handling to updateClaim and addClaim method in UI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

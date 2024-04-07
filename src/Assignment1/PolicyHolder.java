@@ -24,6 +24,7 @@ public class PolicyHolder extends Customer{
         this.dependents = new ArrayList<>();
     }
 
+    //Getter
     public List<Dependent> getDependents() {
         return this.dependents;
     }

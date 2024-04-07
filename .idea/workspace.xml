@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="create setter and getter for Claim; delete CustomerProcessManager and CustomerProcessManagerImp; add UI">
+    <list default="true" id="39b8c75f-6d26-4b9f-87c1-5b79b59a220a" name="Changes" comment="add displayCustomer method to UI">
       <change beforePath="$PROJECT_DIR$/src/Assignment1/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment1/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +92,7 @@
       <workItem from="1712244146201" duration="876000" />
       <workItem from="1712246324123" duration="1200000" />
       <workItem from="1712296547291" duration="22003000" />
-      <workItem from="1712407671723" duration="17717000" />
+      <workItem from="1712407671723" duration="19436000" />
     </task>
     <task id="LOCAL-00001" summary="create Customer class">
       <option name="closed" value="true" />
@@ -182,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712431167564</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add displayCustomer method to UI">
+      <option name="closed" value="true" />
+      <created>1712432582213</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712432582213</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +208,7 @@
     <MESSAGE value="create Bank; edit fields in Claim; delete ClaimProcessManagerImp and move the methods into Customer; add constructors for a few classes" />
     <MESSAGE value="create constructor, setter and getter for a few classes, create DataManager class; override toString for a few classes" />
     <MESSAGE value="create setter and getter for Claim; delete CustomerProcessManager and CustomerProcessManagerImp; add UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="create setter and getter for Claim; delete CustomerProcessManager and CustomerProcessManagerImp; add UI" />
+    <MESSAGE value="add displayCustomer method to UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="add displayCustomer method to UI" />
   </component>
 </project>

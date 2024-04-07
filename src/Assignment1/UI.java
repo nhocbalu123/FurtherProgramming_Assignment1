@@ -63,7 +63,7 @@ public class UI {
 
         //Sort list of claims by date
         claims.sort((c1, c2) -> {
-            return c2.getClaimDate().compareTo(c1.getClaimDate()); // Descending order
+            return c2.getClaimDate().compareTo(c1.getClaimDate()); //Descending order
         });
 
         //Print all claims of a customer
@@ -92,7 +92,7 @@ public class UI {
         }
     }
 
-    public void addClaim() throws ParseException {
+    public void addClaim() {
         System.out.println("Please enter the ID of the customer:");
         String customerId = scanner.nextLine();
 
@@ -102,37 +102,64 @@ public class UI {
             return;
         }
 
-        System.out.println("Please enter the ID of the claim:");
-        String claimId = scanner.nextLine();
+        //Enter claimID
+        String claimId = null;
+        while (claimId == null) {
+            System.out.println("Please enter the ID of the claim (f followed by '-' and 10 digits):");
+            claimId = scanner.nextLine();
+            if (!claimId.matches("f-\\d{10}")) {
+                System.out.println("Invalid ID format. Please enter a valid ID.\n");
+                claimId = null;
+            }
+        }
 
-        System.out.println("Please enter the claim date (dd/MM/yyyy):");
-        String claimDateString = scanner.nextLine();
-        Date claimDate = new SimpleDateFormat("dd/MM/yyyy").parse(claimDateString);
+        Date claimDate = null;
+        while (claimDate == null) {
+            System.out.println("Please enter the claim date (dd/MM/yyyy):");
+            String claimDateString = scanner.nextLine();
+            try {
+                claimDate = new SimpleDateFormat("dd/MM/yyyy").parse(claimDateString);
+            } catch (ParseException e) {
+                System.out.println("Invalid date format. Please enter a valid date.\n");
+            }
+        }
 
-        System.out.println("Please enter the card number:");
-        String cardNumber = scanner.nextLine();
+        String cardNumber = null;
+        while (cardNumber == null) {
+            System.out.println("Please enter the card number (10 digits):");
+            cardNumber = scanner.nextLine();
+            if (!cardNumber.matches("\\d{10}")) {
+                System.out.println("Invalid card number. Please enter a valid card number.\n");
+                cardNumber = null;
+            }
+        }
 
-        System.out.println("Please enter the exam date (dd/MM/yyyy):");
-        String examDateString = scanner.nextLine();
-        Date examDate = new SimpleDateFormat("dd/MM/yyyy").parse(examDateString);
+        Date examDate = null;
+        while (examDate == null) {
+            System.out.println("Please enter the exam date (dd/MM/yyyy):");
+            String examDateString = scanner.nextLine();
+            try {
+                examDate = new SimpleDateFormat("dd/MM/yyyy").parse(examDateString);
+            } catch (ParseException e) {
+                System.out.println("Invalid date format. Please enter a valid date.\n");
+            }
+        }
 
         System.out.println("Please enter the claim amount:");
         double claimAmount = scanner.nextDouble();
         scanner.nextLine();
 
-        //Enter claim status
         Claim.ClaimStatus claimStatus = null;
         while (claimStatus == null) {
             System.out.println("Please enter the claim status (NEW, PROCESSING, DONE):");
             String claimStatusString = scanner.nextLine();
             try {
                 claimStatus = Claim.ClaimStatus.valueOf(claimStatusString.toUpperCase());
-            } catch (IllegalArgumentException e) { //Execute if input is not 1 of the 3 options
-                System.out.println("Invalid claim status.\n");
+            } catch (IllegalArgumentException e) {
+                System.out.println("Invalid claim status. Please enter a valid status.\n");
             }
         }
 
-        //Enter bank info
         System.out.println("Bank info:");
         String receiverName = customer.getFullName();
 
@@ -144,7 +171,6 @@ public class UI {
 
         Bank bankInfo = new Bank(bankAccountNumber, receiverName, bankName);
 
-        //Enter documents
         System.out.println("Please enter the number of documents:");
         int numDocuments = scanner.nextInt();
         scanner.nextLine();
@@ -172,7 +198,7 @@ public class UI {
         System.out.println("Claim added successfully.\n");
     }
 
-    public void updateClaim() throws ParseException {
+    public void updateClaim() {
         System.out.println("Please enter the ID of the customer:");
         String customerId = scanner.nextLine();
 
@@ -191,34 +217,55 @@ public class UI {
             return;
         }
 
-        System.out.println("Please enter the new claim date (dd/MM/yyyy):");
-        String claimDateString = scanner.nextLine();
-        Date claimDate = new SimpleDateFormat("dd/MM/yyyy").parse(claimDateString);
+        //Enter claim date
+        Date claimDate = null;
+        while (claimDate == null) {
+            System.out.println("Please enter the new claim date (dd/MM/yyyy):");
+            String claimDateString = scanner.nextLine();
+            try {
+                claimDate = new SimpleDateFormat("dd/MM/yyyy").parse(claimDateString);
+            } catch (ParseException e) {
+                System.out.println("Invalid date format. Please enter a valid date.\n");
+            }
+        }
 
-        System.out.println("Please enter the new card number:");
-        String cardNumber = scanner.nextLine();
+        String cardNumber = null;
+        while (cardNumber == null) {
+            System.out.println("Please enter the new card number (10 digits):");
+            cardNumber = scanner.nextLine();
+            if (!cardNumber.matches("\\d{10}")) {
+                System.out.println("Invalid card number. Please enter a valid card number.\n");
+                cardNumber = null;
+            }
+        }
 
-        System.out.println("Please enter the new exam date (dd/MM/yyyy):");
-        String examDateString = scanner.nextLine();
-        Date examDate = new SimpleDateFormat("dd/MM/yyyy").parse(examDateString);
+        //Enter exam date
+        Date examDate = null;
+        while (examDate == null) {
+            System.out.println("Please enter the new exam date (dd/MM/yyyy):");
+            String examDateString = scanner.nextLine();
+            try {
+                examDate = new SimpleDateFormat("dd/MM/yyyy").parse(examDateString);
+            } catch (ParseException e) {
+                System.out.println("Invalid date format. Please enter a valid date.\n");
+            }
+        }
 
         System.out.println("Please enter the new claim amount:");
         double claimAmount = scanner.nextDouble();
         scanner.nextLine();
 
-        //Enter claim status
         Claim.ClaimStatus claimStatus = null;
         while (claimStatus == null) {
             System.out.println("Please enter the new claim status (NEW, PROCESSING, DONE):");
             String claimStatusString = scanner.nextLine();
             try {
                 claimStatus = Claim.ClaimStatus.valueOf(claimStatusString.toUpperCase());
-            } catch (IllegalArgumentException e) { //Execute if input is not 1 of the 3 options
-                System.out.println("Invalid claim status.\n");
+            } catch (IllegalArgumentException e) {
+                System.out.println("Invalid claim status. Please enter a valid status.\n");
             }
         }
 
-        //Enter bank info
         System.out.println("New bank info:");
         String receiverName = customer.getFullName();
 
@@ -230,7 +277,6 @@ public class UI {
 
         Bank bankInfo = new Bank(bankAccountNumber, receiverName, bankName);
 
-        //Enter documents
         System.out.println("Please enter the new number of documents:");
         int numDocuments = scanner.nextInt();
         scanner.nextLine();
@@ -277,7 +323,7 @@ public class UI {
         System.out.println("Claim deleted successfully.\n");
     }
 
-    public void start() throws ParseException {
+    public void start() {
         System.out.println("\nWELCOME TO INSURANCE CLAIMS MANAGEMENT SYSTEM! - by BALU\n");
         while (true) {
             System.out.println("Please select an option:");

@@ -20,17 +20,17 @@ Basic-package:
 - [ ] install external library: postgresql-42.2.23.jar + maven jar + openjdk-22
 - Test DB class: (currently in Main.java): Hiện tại mới test dữ liệu trên main class
     - [ ] add: new policyHolder, new policyOwner, new claim - OK
-    - [ ] update: update claim - OK
-    - [ ] delete
-    - [ ] getOne: OK
-    - [ ] getAll: OK
-
+    - [x] update: OK
+    - [x] delete: OK
+    - [x] getOne: OK
+    - [x] getAll: OK
+    Sẽ vừa làm GUI vừa check + sửa lại
 
 To do:
 - [ ] Class admin: Tạo class Admin hoàn chỉnh
 - [ ] CRUD dependent: Chưa kết nối dependent với policy holder
-- [ ] update time when user change data
-- [ ] track user action in log table (only admin access)
+- [x] update time when user change data
+- [x] track user action in log table (only admin access)
 - [ ] statistic (only admin access)
 - [ ] GUI for each user group: Dự kiến tạo CustomerGUI, ProviderGUI và AdminGUI
 - [ ] function cho mỗi nhóm:

@@ -9,6 +9,7 @@ import org.claimsystem.g24fp.logic.*;
 
 import java.sql.Connection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Main {
@@ -21,6 +22,14 @@ public class Main {
         ICardDB icardDB = new ICardDB();
         Connection conn = DBConnection.getConnection();
 
+        // ----- CREATE TRIGGER
+        // the login user
+        String userName = "c1234567"; // policy holder 1234567
+        String passWord = "12345";
+
+        // assume that the user can login successfully
+        // then the user can perform some actions
+        // the user can create a new claim
 
 
         // -----TEST USER
@@ -112,12 +121,24 @@ public class Main {
         newPolicy.put("policy_owner", "c7654321");
 //        policyDB.add(conn, newPolicy);
 
+        Map<String, String> updateInfo = new HashMap<>();
+        updateInfo.put("id", "p03");
+        updateInfo.put("column", "cover_rate");
+        updateInfo.put("value", "0.9");
+//        policyDB.update(conn, updateInfo);
+
+        List<Policy> policies = policyDB.getAll(conn).stream().filter(policy -> policy.getPolicyOwner().getCustomerID().equals("c7654321")).toList();
+        policies.forEach(System.out::println);
+
+
         Map<String, String> document = new HashMap<>();
         document.put("id", "d05");
         document.put("name", "document5");
         document.put("claimID", "f1234567896");
-        claimDB.addDocument(conn, document, new byte[0]);
+//        claimDB.addDocument(conn, document, new byte[0]);
 //        claimDB.deleteDocument(conn, "d05");
 
+        claimDB.getAll(conn).stream().filter(claim -> claim.getInsuredPerson().getCustomerID().equals("c1234568")).forEach(System.out::println);
+        claimDB.getAllDocuments(conn).stream().filter(doc -> doc.getClaimID().equals("f1234567896")).forEach(System.out::println);
     }
 }

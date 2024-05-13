@@ -4,15 +4,13 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DBConnection {
-    public static final String URL = "jdbc:postgresql://localhost:5432/fp24";
-    public static final String USER = "postgres";
-    public static final String PASSWORD = "123456789";
+    public static final String URL = "jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres?user=postgres.vwabpbkixqotqpxraopx&password=Minh@Thang123";
 
     public static Connection getConnection() {
         Connection conn = null;
         try {
             Class.forName("org.postgresql.Driver");
-            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            conn = DriverManager.getConnection(URL);
             if (conn == null) {
                 System.out.println("Failed to make connection!");
             } else {

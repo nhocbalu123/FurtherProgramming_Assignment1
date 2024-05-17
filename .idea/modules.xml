@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Assignment 1.iml" filepath="$PROJECT_DIR$/Assignment 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/claim-maven/claim-maven.iml" filepath="$PROJECT_DIR$/claim-maven/claim-maven.iml" />
     </modules>
   </component>
 </project>
